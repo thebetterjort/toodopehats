@@ -1,0 +1,51 @@
+= render 'shared/header_big', overlayer: true
+
+.hero-container
+  .hero-image style="background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/ABAEE3FCBD.jpg)"
+  .hero-text.v-align.u-text-center
+    .fontweight-semibold.u-marginbottom-20.fontsize-jumbo.hero-big-text= t('Create and sell hats!')
+    .fontsize-large.lineheight-tight.u-marginbottom-30= t('Sell high-quality hats with zero upfront costs and zero risk. We ship directly to buyers, you keep the profit.')
+    .w-col.w-col-6.w-col-offset-3.w-col-tiny-12.w-col-tiny-pull-3
+      = link_to t('.shop_hats_now'), explore_path(ref: 'home_banner_explore'), class: 'btn btn-large '
+  /video.hero-video autoplay="autoplay" loop="loop" preload="auto" poster="/assets/producerun/hero-01.jpg"
+    source src="https://s3.amazonaws.com/producerun/PR+PROMO.mp4" type="video/mp4"
+
+.project-start-wrapper
+  .page-header
+    .w-container.no-responsive
+      /.fontsize-largest.u-text-center.u-marginbottom-70.u-margintop-40 = t('pages.start.title')
+      /- statistics = Statistics.first
+      .w-row.u-text-center.u-marginbottom-80
+        .w-col.w-col-4
+          .fontsize-jumbo.text-success.lineheight-loose 3000
+          /! number_to_human(statistics.total_contributors)
+          p.start-stats.fontsize-base = t('hats made and shipped to customers all over the country!')
+        .w-col.w-col-4
+          .fontsize-jumbo.text-success.lineheight-loose 50
+          /! number_to_human(statistics.total_projects_success)
+          p.start-stats.fontsize-base = t('successful campaigns this month')
+        .w-col.w-col-4
+          .fontsize-jumbo.text-success.lineheight-loose $75,000
+          /! = number_to_human(statistics.total_contributed)
+          p.start-stats.fontsize-base = t('straight into peoples pockets')
+
+      .w-row.u-margintop-20.u-marginbottom-60
+        .w-col.w-col-3.w-col-push-3
+          #learn_link= link_to t('pages.start.learn-baby'), '#learn', class: 'btn btn-medium'
+        .w-col.w-col-3.w-col-push-3
+          = link_to t('pages.start.design'), new_project_path, class: 'btn btn-medium btn-secondary'
+
+
+.section.u-marginbottom-0.u-paddingbottom-0
+  .w-container
+    .w-row.u-marginbottom-0
+      .fontsize-larger.u-text-center.u-marginbottom-70.u-margintop-40 = t('Find who near you is making money')
+
+
+
+  #map style="height: 500px;"
+
+
+
+
+= render 'shared/footer_big'

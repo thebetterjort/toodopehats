@@ -1,0 +1,69 @@
+- content_for :title, t('.page-title')
+
+= render 'shared/header_big'
+
+.project-start-wrapper
+  .page-header
+    .w-container.no-responsive
+      .fontsize-largest.u-text-center.u-marginbottom-70.u-margintop-40 = t('We make it easy for anyone to create and sell dope hats')
+      - statistics = Statistics.first
+      .w-row.u-text-center.u-marginbottom-80
+        .w-col.w-col-4
+          .fontsize-jumbo.text-success.lineheight-loose = 348 
+          /! number_to_human(statistics.total_contributors)
+          p.start-stats.fontsize-base = t('How many of contributors to successful campaigns on Too Dope Hats in the past month.')
+        .w-col.w-col-4
+          .fontsize-jumbo.text-success.lineheight-loose = 100 
+          /! number_to_human(statistics.total_projects_success)
+          p.start-stats.fontsize-base = t('100 campaigns have been funded on Too Dope Hats')
+        .w-col.w-col-4
+          .fontsize-jumbo.text-success.lineheight-loose $11,231 
+          /! = number_to_human(statistics.total_contributed)
+          p.start-stats.fontsize-base = t('$11,231 have gone into campaigners pockets on Too Dope Hats.')
+
+      .w-row.u-margintop-20.u-marginbottom-60
+        .w-col.w-col-3.w-col-push-3
+          #learn_link= link_to t('.learn-more'), '#learn', class: 'btn btn-medium'
+        .w-col.w-col-3.w-col-push-3
+          = link_to t('.submit'), new_project_path, class: 'btn btn-medium btn-secondary'
+
+  #learn
+    .w-container.no-responsive.section
+      .w-row.u-marginbottom-80.u-margintop-30
+        .w-col.w-col-6.u-text-center
+          = image_tag "catarse_bootstrap/start/inscreva-seu-projeto.png"
+        .w-col.w-col-6
+          .headline = t('Start your campaign')
+          p.fontsize-base = t('Choose your hat, upload your design, set your price, run a succesful campaign.')
+          
+
+      .w-row.u-marginbottom-80
+        .w-col.w-col-6
+          .headline = t('We fulfill all orders')
+          p.fontsize-base = t('Once a successful campaign finishes we get all hats made and ship directly to customers.')
+         
+
+        .w-col.w-col-6.u-text-center
+          = image_tag "catarse_bootstrap/start/trabalhe-muito.png"
+
+      .w-row.u-marginbottom-80
+        .w-col.w-col-6.u-text-center
+          = image_tag "catarse_bootstrap/start/tudo-ou-nada.png"
+        .w-col.w-col-6
+          .headline = t('No Risk')
+          p.fontsize-base = t('You do not have to worry about making or ordering too many or not enough hats.')
+          
+
+      .w-row.u-marginbottom-80
+        .w-col.w-col-6
+          .headline = t('The profit is yours')
+          p.fontsize-base = t('Sell your hat for whatever you want. We take our baseprice and everything inbetween base price and final order is yours.')
+          
+        .w-col.w-col-6.u-text-center
+          = image_tag "catarse_bootstrap/start/mobilze-interessados.png"
+
+      .w-row.u-margin-top-40
+        .w-col.w-col-4.w-col-push-4
+          = link_to t('.submit'), new_project_path, class: 'btn btn-large'
+
+  = render 'shared/footer_big'
