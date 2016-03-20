@@ -16,6 +16,7 @@ class Project < ActiveRecord::Base
   has_notifications
 
   mount_uploader :uploaded_image, ProjectUploader
+ 
 
   delegate  :display_online_date, :display_status, :progress, :display_progress,
             :display_image, :display_expires_at, :remaining_text, :time_to_go,

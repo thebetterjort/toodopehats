@@ -1,29 +1,30 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// the compiled file.
-//
-// WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
-// GO AFTER THE REQUIRES BELOW.
-//
-//= require ./lib/jquery.js
+// *********************************
+//  Bower front-end dependencies
+// *********************************
+//= require jquery
+//= require underscore
+//= require backbone
+
+//= require jquery.fixedmask
 //= require ./lib/jquery.brbanks.js
-//= require jquery_ujs
+//= require jquery-ujs
 //= require ./lib/jquery-ui.js
-//= require best_in_place
-//= require ./lib/underscore.js
-//= require ./lib/backbone.js
+//= require jQuery-Mask-Plugin
+//= require jquery-sticky
 //= require ./lib/skull.js
-//= require ./app/app.js
-//= require ./lib/jquery.sticky.js
-//= require ./lib/jquery.smooth-scroll.js
-//= require ./lib/auto_campaign_url.js
+//= require jquery-typewatch
+//= require store
+//= require mithril
+//= require mithril.postgrest
+// *********************************
+//  Rails GEMs front-end dependencies
+// *********************************
+//= require best_in_place
 //= require cocoon
+// *********************************
+//  Call dependencies first
+// *********************************
+//= require ./lib/skull
 //= require_tree ./lib
+//= require ./app/app
 //= require_tree ./app
-
-

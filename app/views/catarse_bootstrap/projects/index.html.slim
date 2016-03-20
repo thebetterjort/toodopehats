@@ -3,7 +3,7 @@
 .hero-container
   .hero-image style="background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/ABAEE3FCBD.jpg)"
   .hero-text.v-align.u-text-center
-    .fontweight-semibold.u-marginbottom-20.fontsize-jumbo.hero-big-text= t('Create and sell hats!')
+    .fontweight-semibold.u-marginbottom-20.fontsize-jumbo.hero-big-text= t('Create and sell dope hats!')
     .fontsize-large.lineheight-tight.u-marginbottom-30= t('Sell high-quality hats with zero upfront costs and zero risk. We ship directly to buyers, you keep the profit.')
     .w-col.w-col-6.w-col-offset-3.w-col-tiny-12.w-col-tiny-pull-3
       = link_to t('.shop_hats_now'), explore_path(ref: 'home_banner_explore'), class: 'btn btn-large '
@@ -43,7 +43,8 @@
 
 
 
-  #map style="height: 500px;"
+
+= render 'shared/canvas'
 
 
 

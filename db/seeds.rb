@@ -20,9 +20,9 @@ puts 'Seeding the database...'
  end
 
 {
-  company_name: 'TooDopeHats',
+  company_name: 'Bossbrims',
   company_logo: 'http://www.producerun.com/wp-content/uploads/2014/11/rsz_producerun-green.png',
-  host: 'producerun.com',
+  host: 'bossbrims.com',
   base_url: "http://www.producerun.com",
   email_contact: 'info+contact@producerun.com',
   email_payments: 'info+finance@producerun.com',

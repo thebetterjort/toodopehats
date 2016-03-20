@@ -1,0 +1,23 @@
+{
+  "name": "producerun",
+  "homepage": "https://github.com/americas--guest/toodopehats",
+  "authors": [
+    "Anisul <anisul.huq90@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "fabric.js": "fabric#~1.5.0",
+    "masonry": "desandro/masonry#^4.0.0"
+  }
+}

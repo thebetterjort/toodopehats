@@ -34,7 +34,7 @@
               .card.card-terciary
                 = form.input :budget, as: :text, 
                   wrapper: :one_col,
-                  hint: t('Just Blaze'),
+                  hint: t('Make Plays'),
                   wrapper_class: '',
                   label_wrapper_html: { class: 'w-col w-col-12' },
                   text_field_wrapper_html: { class: 'w-col w-col-12' },
@@ -55,7 +55,7 @@
           a.w-inline-block.card.u-radius.card-guide.u-marginbottom-20 href="http://beta.catarse.me/guides#you_history" target="_blank"
             = image_tag "icon-guides-blue-sm.png", class: "u-left"
             .fontweight-semibold.fontsize-smallest.fontcolor-secondary Need Help or advice?
-            .fontsize-small.fontcolor-dashboard ProduceRun Support
+            .fontsize-small.fontcolor-dashboard BossBrims support
 
           = render 'shared/formatting_tips'
   .divider
@@ -97,19 +97,8 @@
 
 
 
-container
-  input.btn.js-loadfile type="file" value="Upload" /
-  button.btn.js-reset Reset
-  button.btn.js-crop Crop
-  .crop-wrapper
-    .top-overlay
-    .bottom-overlay
-    .left-overlay
-    .right-overlay
-    .overlay
-      .overlay-inner
-    img.resize-image alt=("image for resizing") src="img/image.jpg" /
-script src="https://code.jquery.com/jquery-2.1.1.min.js" 
+
+
 
 
 

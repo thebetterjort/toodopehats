@@ -1,0 +1,188 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://rawgit.com/kangax/fabric.js/master/dist/fabric.min.js"></script>
+
+
+<input type="file" id="file">
+<input type="color" value="blue" id="fill" />
+<select id="font">
+  <option>arial</option>
+  <option>tahoma</option>
+  <option>times new roman</option>
+</select>
+<button onclick="addText()">Add Custom Text</button>
+<br />
+<canvas id="canvas" width="750" height="550"></canvas>
+<a href='' id='txt' target="_blank">Click Me!!</a>
+<br />
+<input type="image" id="toggle2" style="height:200px;width:200px;" src="https://s3.amazonaws.com/bossbrims/hatdemo.jpg" />
+<input type="image" id="toggle" style="height:200px;width:200px;" src="https://s3.amazonaws.com/bossbrims/wholesale_blank_snapback_hats_bkc2007_royal_blue_1__62075.1444325714.500.400.jpg" />
+<input type="image" id="toggle3" style="height:200px;width:200px;" src="https://s3.amazonaws.com/bossbrims/bk_caps_flat_bill_snapback_mesh_trucker_caps_hats_bkc_2056_flower_black_1__21559.1451318840.500.400.jpg" />
+<input type="image" id="toggle5" style="height:200px;width:200px;" src="https://s3.amazonaws.com/bossbrims/wholesale_blank_snapback_hats_bkc2007_navy_2__45074.1450885754.500.400.jpg" />
+<input type="image" id="toggle7" style="height:200px;width:200px;" src="https://s3.amazonaws.com/bossbrims/wholesale_blank_snapback_hats_bkc2007_black_red_1__51197.1444660292.500.400.jpg" />
+<input type="image" id="toggle8" style="height:200px;width:200px;" src="https://s3.amazonaws.com/bossbrims/wholesale_blank_cotton_ostrich_skin_snapback_hats_2011_black_brown_3__23483.1439998152.500.400.jpg" />
+
+<img id="preview" />
+
+
+<script>
+var canvas = new fabric.Canvas('canvas');
+
+document.getElementById('file').addEventListener("change", function (e) {
+  var file = e.target.files[0];
+  var reader = new FileReader();
+  console.log("reader   " + reader);
+  reader.onload = function (f) {
+    var data = f.target.result;
+    fabric.Image.fromURL(data, function (img) {
+      var oImg = img.set({left: 70, top: 100, width: 250, height: 200, angle: 0}).scale(0.9);
+      canvas.add(oImg).renderAll();
+      canvas.setActiveObject(oImg);  
+    });
+  };
+  reader.readAsDataURL(file);
+});
+
+var img = new Image();
+img.crossOrigin = "anonymous";  // important - set crossOrigin before src!
+img.src = "https://s3.amazonaws.com/bossbrims/hatdemo.jpg";
+img.onload = function(){
+  canvas.setBackgroundImage(new fabric.Image(img, {
+    originX: 'left',
+    originY: 'top',
+    left: 0,
+    top: 0
+  }), canvas.renderAll.bind(canvas));
+};
+
+
+$('#fill').change(function(){
+  var obj = canvas.getActiveObject();
+  if(obj){
+    obj.setFill($(this).val());
+  }
+  canvas.renderAll();
+});
+
+$('#font').change(function(){
+  var obj = canvas.getActiveObject();
+  if(obj){
+    obj.setFontFamily($(this).val());
+  }
+  canvas.renderAll();
+});
+
+function addText() {
+  var oText = new fabric.IText('Tap and Type', { 
+    left: 100, 
+    top: 100 ,
+  });
+
+  canvas.add(oText);
+  canvas.setActiveObject(oText);
+  $('#fill, #font').trigger('change');
+  oText.bringToFront();
+}
+
+document.querySelector('#txt').onclick = function (e) {
+  e.preventDefault();
+  canvas.deactivateAll().renderAll();
+  document.querySelector('#preview').src = canvas.toDataURL();
+};
+
+fabric.util.addListener(document.getElementById('toggle'), 'click', function () {
+     {
+        var img = new Image();
+img.crossOrigin = "anonymous";  // important - set crossOrigin before src!
+img.src = "https://s3.amazonaws.com/bossbrims/wholesale_blank_snapback_hats_bkc2007_royal_blue_1__62075.1444325714.500.400.jpg";
+img.onload = function(){
+  canvas.setBackgroundImage(new fabric.Image(img, {
+    originX: 'left',
+    originY: 'top',
+    left: 0,
+    top: 0
+  }), canvas.renderAll.bind(canvas));
+};      
+    }
+});
+fabric.util.addListener(document.getElementById('toggle2'), 'click', function () {
+     {
+        var img = new Image();
+img.crossOrigin = "anonymous";  // important - set crossOrigin before src!
+img.src = "https://s3.amazonaws.com/bossbrims/hatdemo.jpg";
+img.onload = function(){
+  canvas.setBackgroundImage(new fabric.Image(img, {
+    originX: 'left',
+    originY: 'top',
+    left: 0,
+    top: 0
+  }), canvas.renderAll.bind(canvas));
+};      
+    }
+});
+
+fabric.util.addListener(document.getElementById('toggle3'), 'click', function () {
+     {
+        var img = new Image();
+img.crossOrigin = "anonymous";  // important - set crossOrigin before src!
+img.src = "https://s3.amazonaws.com/bossbrims/bk_caps_flat_bill_snapback_mesh_trucker_caps_hats_bkc_2056_flower_black_1__21559.1451318840.500.400.jpg";
+img.onload = function(){
+  canvas.setBackgroundImage(new fabric.Image(img, {
+    originX: 'left',
+    originY: 'top',
+    left: 0,
+    top: 0
+  }), canvas.renderAll.bind(canvas));
+};      
+    }
+});
+
+fabric.util.addListener(document.getElementById('toggle5'), 'click', function () {
+     {
+        var img = new Image();
+img.crossOrigin = "anonymous";  // important - set crossOrigin before src!
+img.src = "https://s3.amazonaws.com/bossbrims/wholesale_blank_snapback_hats_bkc2007_navy_2__45074.1450885754.500.400.jpg";
+img.onload = function(){
+  canvas.setBackgroundImage(new fabric.Image(img, {
+    originX: 'left',
+    originY: 'top',
+    left: 0,
+    top: 0
+  }), canvas.renderAll.bind(canvas));
+};      
+    }
+});
+
+fabric.util.addListener(document.getElementById('toggle7'), 'click', function () {
+     {
+        var img = new Image();
+img.crossOrigin = "anonymous";  // important - set crossOrigin before src!
+img.src = "https://s3.amazonaws.com/bossbrims/wholesale_blank_snapback_hats_bkc2007_black_red_1__51197.1444660292.500.400.jpg";
+img.onload = function(){
+  canvas.setBackgroundImage(new fabric.Image(img, {
+    originX: 'left',
+    originY: 'top',
+    left: 0,
+    top: 0
+  }), canvas.renderAll.bind(canvas));
+};      
+    }
+});
+
+fabric.util.addListener(document.getElementById('toggle8'), 'click', function () {
+     {
+        var img = new Image();
+img.crossOrigin = "anonymous";  // important - set crossOrigin before src!
+img.src = "https://s3.amazonaws.com/bossbrims/wholesale_blank_cotton_ostrich_skin_snapback_hats_2011_black_brown_3__23483.1439998152.500.400.jpg";
+img.onload = function(){
+  canvas.setBackgroundImage(new fabric.Image(img, {
+    originX: 'left',
+    originY: 'top',
+    left: 0,
+    top: 0
+  }), canvas.renderAll.bind(canvas));
+};      
+    }
+});
+
+
+</script>

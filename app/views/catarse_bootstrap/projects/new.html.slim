@@ -10,7 +10,7 @@
 
           fieldset
             legend.fontsize-largest.lineheight-loose.u-text-center = t('.form.blocks.first.title')
-            p.fontsize-small.u-marginbottom-60.u-text-center = t('Complete the information below and start your Too Dope Hat campaign.')
+            p.fontsize-small.u-marginbottom-60.u-text-center = t('Complete the information below and start your Boss Brims campaign.')
             = render 'devise/shared/alert'
 
             .u-marginbottom-40
@@ -30,7 +30,7 @@
                 .w-col.w-col-8.w-col-small-6.w-col-tiny-6
                   = form.input :permalink, as: :string, required: false, input_html: {class: 'medium postfix'}
             .u-marginbottom-80
-              label.fontsize-large.field-label for="field"= t('How did you find Too Dope Hats?')
+              label.fontsize-large.field-label for="field"= t('How did you find Boss Brims?')
               = form.input :traffic_sources, as: :select, collection: t('simple_form.collections.project.traffic_sources').values, prompt: t('simple_form.prompts.project.select'), class: 'medium', label: '', required: false, hint: ''
           .w-row
             .w-col.w-col-6.w-col-push-3

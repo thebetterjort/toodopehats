@@ -174,8 +174,8 @@ en:
       category: category
       category_label: Explore other campaigns in the same category as yours.
       online_days: Deadline for collection
-      online_days_label: You can choose between 1 and 60 days for your campaign.
-      value: Amount to be raised
+      online_days_label: Hats will be made after campaign ends.
+      value: 12 hat minimum sold for hats to be made.
       value_secondary: Plan a consistent goal with your campaign proposes.
       form:
         submit: save

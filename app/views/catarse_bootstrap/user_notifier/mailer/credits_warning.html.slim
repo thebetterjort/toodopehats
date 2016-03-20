@@ -2,10 +2,10 @@
 |Hello, <strong>#{user.display_name}</strong> !
 br
 br
-|We saw here that you have  $ #{user.credits} in credits on ProduceRun. How about enjoy yourself and buy into a ProduceRun campaign coming to town?
+|We saw here that you have  $ #{user.credits} in credits on Boss Brims. How about enjoy yourself and buy into a Boss Brims campaign coming to town?
 br
 br
-|We made some ProduceRun Campaigns suggestions especially for you:
+|We made some Boss Brims Campaigns suggestions especially for you:
 br
 br
 -user.recommended_projects.limit(3).each do |project|
@@ -33,8 +33,8 @@ br
 |If you prefer, you can claim a refund of their money by clicking #{link_to("aqui", "#{CatarseSettings[:base_url]}/users/#{user.to_param}#credits")}.  You will be able to take most of your questions about reimbursement #{link_to('nesse artigo', 'http://support.producerun.com')}.
 br
 br
-|If you have any other questions, please contact us at our Support Center: support.producerun.com
+|If you have any other questions, please contact us at our Support Center: bossbrims.com
 br
 br
 |Thanks You,
-|ProduceRun
+|Boss Brims
