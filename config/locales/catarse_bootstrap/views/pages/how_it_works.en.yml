@@ -2,12 +2,12 @@
 en:
   pages:
     how_it_works:
-      page-title: As the ProduceRun work?
+      page-title: As the BossBrims work?
       title: Makes possible their collective campaign
       submit: Start your campaign
       learn-more: Learn more
       header:
-        people: People have supported at least 01 campaign in ProduceRun
+        people: People have supported at least 01 campaign in BossBrims
         success: Projects have been successful here
         money: were invested
       start:
@@ -26,4 +26,4 @@ en:
         title: All or nothing
         content: You can choose a time between 1 and 60 days to achieve the purpose
           of storage, the system we call All or Nothing .
-        link: Learn how our rate helps keep ProduceRun
+        link: Learn how our rate helps keep BossBrims

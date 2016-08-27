@@ -18,7 +18,7 @@ en:
     credits:
       modal:
         title: You really want to request a refund of your support ?
-        text: 'Learn how the refund process ProduceRun:'
+        text: 'Learn how the refund process BossBrims:'
         link: Rules and Operations of refunds / rebates
         reject_btn: No, I want to keep my credits
         accept_btn: Yes, I request a refund for my support
@@ -26,7 +26,7 @@ en:
         contribution_date: Support Date
         current_credits_html: Your current balance is <span id="current_credits">%{credits}</span>
           credits.
-        important_html: For all operating rules for reimbursement, <a href='http://support.producerun.com'
+        important_html: For all operating rules for reimbursement, <a href='http://support.BossBrims.com'
           target='_blank'>clique aqui2958884982019787 .
         project: campaign
         refunded: Confirmed request.
@@ -60,7 +60,7 @@ en:
       change_password: Change my password
       current_password_hint: "<i>The password is changed you need to confirm
         your password atual.</i>"
-      email_hint: Your email is used only to send ProduceRun of communications and
+      email_hint: Your email is used only to send BossBrims of communications and
         projects you support .
       email_tooltip: Click here to fill in your email ...
       gravatar_hint_html: You can also change your photo using %{link} with your email.
@@ -68,7 +68,7 @@ en:
       submit_text: Choose your image
       submit: send
       my_data: my data
-      newsletter: I want to receive news from ProduceRun by email
+      newsletter: I want to receive news from BossBrims by email
       password_hint: "<i>Deixe blank if you do not want to change your senha.</i>"
       deactivate: Disable my account
       deactivate_notice: The %{name} account has been disabled.
@@ -83,8 +83,8 @@ en:
     show:
       projects:
         here: here
-        no_projects: "%{name} not yet any campaign on ProduceRun ."
-        no_projects_current_user_html: You haven't started any campaigns on ProduceRun yet.
+        no_projects: "%{name} not yet any campaign on BossBrims ."
+        no_projects_current_user_html: You haven't started any campaigns on BossBrims yet.
           .
         title: "%{name} campaigns"
         title_current_user: My Campaigns
@@ -115,4 +115,4 @@ en:
         active_projects: Active campaigns
         funded_projects: Campaigns funded
         not_funded_projects: Campaigns not funded
-        no_contribuitions: You haven't bought from a ProduceRun Campaign Yet, its not to late, start today...
+        no_contribuitions: You haven't bought from a Boss Brims Campaign Yet, its not to late, start today...

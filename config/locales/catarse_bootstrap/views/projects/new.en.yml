@@ -11,18 +11,18 @@ en:
           criteria: Selection Criteria
           suport_central: Support Center
           support_contact: Contact us
-          how_it_works: As the ProduceRun work?
+          how_it_works: How does Boss Brims work?
           money: How will I get the money ?
-          selection: How are campaigns selected ?
+          selection: How are designs selected ?
           all_or_nothing: Why All or Nothing ?
       form:
         blocks:
           first:
             title: Let's Get Started!
             description: Complete the information below to start the draft of your
-              ProduceRun Campaign.
+              Boss Brims Campaign.
         info:
-          permalink: https://producerun.com/
+          permalink: https://bossbrims.com/
           goal: "$"
           online_days: days
         submit: Save and Continue

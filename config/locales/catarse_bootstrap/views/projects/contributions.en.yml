@@ -12,7 +12,7 @@ en:
       contribution:
         anonymous_contribution: anonymous supporter
         anonymous_description: Opt-in to remain incognito
-        no_reward: This supporter did not select any reward
+        no_reward: This supporter did not select any reward option
       selected_reward:
         review_without_reward_html: You will support with <strong>%{value}</strong>
           and do not want any reward for their support.
@@ -20,7 +20,7 @@ en:
         reward: selected reward
         edit: edit
       credit_card_payment:
-        payment_save_card: I want to save my credit card to facilitate future support
+        payment_save_card: I want to save my credit card
       edit:
         payment_slip_disclaimer: If the campaign is not successful , we will refund
           your support.

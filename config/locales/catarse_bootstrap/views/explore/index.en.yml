@@ -2,7 +2,7 @@
 en:
   explore:
     index:
-      success_follow: Now you follow the category and will receive weekly a list of
+      success_follow: Now you follow the category and will postings of
         new projects %{name}
       success_unfollow: You failed to follow this category %{name}
       follow: follow

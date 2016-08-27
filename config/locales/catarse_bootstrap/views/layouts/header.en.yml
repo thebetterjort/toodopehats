@@ -3,7 +3,7 @@ en:
   layouts:
     header:
       blog: Blog
-      discover: Explore
+      discover: Browse
       faq: FAQ
       help: Help
       about: About
@@ -11,8 +11,8 @@ en:
       projects: My Campaigns
       signin: Login
       signup: Register
-      submit: Start your campaign
-      search: Search campaigns
+      submit: Create your hat
+      search: Search designs
     login:
       login_with_facebook: Login with your facebook account
     user:
